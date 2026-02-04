@@ -21,3 +21,6 @@ class MeSerializer(serializers.ModelSerializer):
             "first_name",
             "last_name"
         ]
+
+class LogutSerializer(serializers.Serializer):
+    refresh_token = serializers.CharField(required=True)
